@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Registerage() {
   return (
     <div>
@@ -7,10 +9,12 @@ export default function Registerage() {
       <p className="text-lg text-center mt-4">Stuff</p>
       <br />
       <div className="flex justify-center">
-        <button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          {" "}
-          Sign Up{" "}
-        </button>
+        <Link
+          href="/login"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Sign Up
+        </Link>
       </div>
       <p className="text-lg text-center mt-4">
         {" "}

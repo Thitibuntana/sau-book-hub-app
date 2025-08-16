@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function LoginPage() {
   return (
     <div>
@@ -7,10 +9,12 @@ export default function LoginPage() {
       <p className="text-lg text-center mt-4">Sign in to view your very own bookshelf!</p>
       <br />
       <div className="flex justify-center">
-        <button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          {" "}
-          Sign In{" "}
-        </button>
+        <Link
+          href="/bookshelf"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Sign In
+        </Link>
       </div>
       <p className="text-lg text-center mt-4">
         {" "}
